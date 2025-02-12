@@ -1,0 +1,9 @@
+# 進度記錄目錄
+.progress/
+# 日誌目錄
+log/
+# Python 相關
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

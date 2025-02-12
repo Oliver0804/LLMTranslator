@@ -1,0 +1,357 @@
+import argparse
+import ollama
+import deepl
+from lxml import etree
+from colorama import init, Fore, Style
+from datetime import datetime
+import os
+import json
+init()  # 初始化 colorama
+
+class TranslationStats:
+    def __init__(self):
+        self.deepl_calls = 0
+        
+    def increment_deepl(self):
+        self.deepl_calls += 1
+        
+    def print_stats(self):
+        print(f"{Fore.YELLOW}統計資訊:{Style.RESET_ALL}")
+        print(f"DeepL API 調用次數: {self.deepl_calls}")
+
+def evaluate_translation_quality(source_text, translated_text, domain="software"):
+    """
+    使用 LLM 進行翻譯品質評估，計算三次評分的平均值。
+    若無法解析數值，則重新評估，最多重試 3 次。
+    """
+    scores = []
+    retries = 0
+    
+    prompt = f"""請依照以下標準評估翻譯品質，給出 0-100 分：
+    1. 翻譯領域「{domain}」，請確保翻譯品質符合專業標準。準確性 (40分)：翻譯是否準確傳達原文含義
+    2. 繁體中文使用 (30分)：出現簡體字會被扣 30 分
+    3. 自然度 (30分)：用字遣詞是否符合台灣用語習慣，特別是{domain}領域的專業用語
+    4. 如果原文沒有HTML標籤或是 &lt;、&gt;、&quot; 等 HTML 實體編碼，而翻譯中出現了，請扣 20 分。
+    原文：{source_text}
+    翻譯：{translated_text}
+    如果輸入的是一種語言的名稱，請直接給100分。
+    請只回覆一個數字分數。"""
+    
+    while len(scores) < 3 and retries < 3:
+        response = ollama.chat(
+            model="gemma2:27b",
+            messages=[
+                {"role": "system", "content": "You are an AI assistant evaluating translation quality. Provide a score from 0 to 100, where higher is better."},
+                {"role": "user", "content": prompt},
+            ]
+        )
+        try:
+            score = float(response["message"]["content"].strip())
+            scores.append(score)
+        except ValueError:
+            retries += 1
+    
+    if len(scores) == 0:
+        return 0
+    
+    print(f"{Fore.CYAN}各次評分: {scores}{Style.RESET_ALL}")
+    return sum(scores) / len(scores)
+
+def should_translate(text):
+    """
+    判斷文字是否需要翻譯
+    """
+    # 如果只有特殊符號或空白，則不翻譯
+    special_chars = set('%&@#$^*()_+-={}[]|\\:;<>,.?/~`')
+    text_chars = set(text.strip())
+    if not text_chars or text_chars.issubset(special_chars):
+        return False
+    return True
+
+def clean_llm_output(text):
+    """
+    清理 LLM 輸出，移除說明文字
+    """
+    # 移除常見的說明文字標記
+    markers = [
+        "翻譯說明：",
+        "## 翻譯說明",
+        "說明：",
+        "**準確性**",
+        "**繁體中文**",
+        "**自然度**",
+        "**專業性**",
+    ]
+    
+    # 取第一個非空行作為翻譯結果
+    lines = [line.strip() for line in text.split('\n') if line.strip()]
+    if not lines:
+        return text
+        
+    # 檢查第一行是否包含說明標記
+    first_line = lines[0]
+    if any(marker in first_line for marker in markers):
+        # 如果包含說明標記，嘗試找到實際翻譯內容
+        for line in lines:
+            if not any(marker in line for marker in markers):
+                return line.strip()
+    
+    return first_line
+
+def translate_text(text, target_lang="ZH-HANT", use_deepl=False, deepl_api_key=None, stats=None, domain="software"):
+    """
+    先使用 LLM 進行翻譯，評估品質後決定是否使用 DeepL 進行翻譯。
+    保持 HTML 及 XML 標籤不變。
+    """
+    print(f"\n{Fore.CYAN}== 開始翻譯 =={Style.RESET_ALL}")
+    print(f"原文: {text}")
+    
+    # 檢查是否需要翻譯
+    if not should_translate(text):
+        print(f"{Fore.YELLOW}文字不需要翻譯，保持原樣{Style.RESET_ALL}")
+        return text
+    
+    translation_prompt = f"""請將以下文字翻譯成繁體中文，這是針對「{domain}」領域的翻譯，需嚴格遵守以下要求：
+    如果輸入的是一種語言名城例如 Português do Brasil，請不要翻譯，直接返回輸入原文作為翻譯結果。
+    1. 準確性：必須準確傳達原文含義
+    2. 繁體中文：嚴禁使用任何簡體字
+    3. 自然度：使用符合台灣用語習慣的措辭，特別注意{domain}領域的專業用詞
+    4. 格式處理規則：
+       - 所有 &lt;、&gt;、&quot; 等 HTML 實體編碼必須保持完全一致
+       - 不要將 &lt;html&gt; 轉換為 <html>
+       - 不要嘗試重新編碼或解碼任何 HTML 實體
+       - 只翻譯實體編碼標籤之間的純文字內容
+       - 包含空格在內的所有格式都要保持原樣
+    如果無法翻譯直接輸出原文。
+    
+    原文：{text}
+
+    請直接返回翻譯結果。"""
+
+    llm_translation = ollama.chat(
+        model="gemma2:27b",
+        messages=[
+            {
+                "role": "system", 
+                "content": "You are a professional software localization translator. Return ONLY the translated text without any explanations or markdown formatting."
+            },
+            {"role": "user", "content": translation_prompt},
+        ]
+    )["message"]["content"].strip()
+    
+    # 清理 LLM 輸出
+    llm_translation = clean_llm_output(llm_translation)
+    
+    print(f"\n{Fore.CYAN}LLM 翻譯結果: {llm_translation}{Style.RESET_ALL}")
+    score = evaluate_translation_quality(text, llm_translation, domain)
+    print(f"{Fore.CYAN}LLM 翻譯評分: {score}{Style.RESET_ALL}")
+    
+    final_translation = llm_translation
+    
+    if score < 90 and use_deepl and deepl_api_key:  # 低於 90 分則使用 DeepL
+        print(f"\n{Fore.RED}翻譯品質不達標，使用 DeepL 進行翻譯...{Style.RESET_ALL}")
+        deepl_client = deepl.Translator(deepl_api_key)
+        deepl_translation = deepl_client.translate_text(text, target_lang=target_lang, preserve_formatting=True).text.strip()
+        if stats:
+            stats.increment_deepl()
+        print(f"{Fore.RED}DeepL 翻譯結果: {deepl_translation}{Style.RESET_ALL}")
+        final_translation = deepl_translation
+    
+    print(f"\n{Fore.GREEN}最終採用翻譯: {final_translation}{Style.RESET_ALL}")
+    print("=====")
+    return final_translation
+
+def process_xliff(file_path, output_path, target_lang, translate_all, supervised, use_deepl, deepl_api_key, domain):
+    stats = TranslationStats()
+    ns = {"xliff": "urn:oasis:names:tc:xliff:document:1.2"}
+    
+    with open(file_path, "r", encoding="utf-8") as file:
+        xliff_content = file.read()
+    
+    root = etree.fromstring(xliff_content.encode("utf-8"))
+    
+    trans_units = root.findall(".//xliff:trans-unit", ns)
+    total_units = len(trans_units)
+    print(f"\n{Fore.CYAN}找到 {total_units} 個翻譯單元{Style.RESET_ALL}")
+    
+    for i, unit in enumerate(trans_units):
+        # 移除 100 個限制，改為顯示進度
+        print(f"\n{Fore.YELLOW}處理第 {i+1}/{total_units} 個單元 (ID: {unit.get('id', 'N/A')}){Style.RESET_ALL}")
+        source = unit.find("xliff:source", ns)
+        target = unit.find("xliff:target", ns)
+        
+        if target is not None:
+            current_state = target.get("state", "")
+            needs_translation = current_state == "needs-translation"
+            
+            # 處理已翻譯的內容
+            if current_state == "translated" and translate_all:
+                print(f"\n{Fore.YELLOW}檢查已翻譯內容品質...{Style.RESET_ALL}")
+                print(f"原文: {source.text}")
+                print(f"現有翻譯: {target.text}")
+                score = evaluate_translation_quality(source.text, target.text, domain)
+                print(f"{Fore.YELLOW}現有翻譯評分: {score}{Style.RESET_ALL}")
+                
+                if score < 85:  # 若已翻譯內容分數過低，則重新翻譯
+                    print(f"{Fore.YELLOW}現有翻譯品質不佳，進行重新翻譯{Style.RESET_ALL}")
+                    needs_translation = True
+                else:
+                    print(f"{Fore.GREEN}現有翻譯品質良好，保持不變{Style.RESET_ALL}")
+                    print("=====")
+                    continue
+            
+            if translate_all or needs_translation:
+                translated_text = translate_text(source.text, target_lang, use_deepl, deepl_api_key, stats, domain)
+                
+                if supervised:
+                    choice = input(f"\n{Fore.YELLOW}是否接受此翻譯？(y/n): {Style.RESET_ALL}").lower()
+                    if choice != 'y':
+                        print("跳過此翻譯")
+                        print("=====")
+                        continue
+                
+                target.text = translated_text
+                target.set("state", "translated")
+                print(f"{Fore.GREEN}>>> 更新翻譯: {translated_text}{Style.RESET_ALL}")
+                print("=====")
+    
+    stats.print_stats()
+    # 儲存新的 XLIFF 文件
+    with open(output_path, "wb") as file:
+        file.write(etree.tostring(root, pretty_print=True, encoding="utf-8"))
+    print(f"翻譯完成，已儲存到 {output_path}")
+
+def process_xcstrings(file_path, output_path, target_lang, translate_all, supervised, use_deepl, deepl_api_key, domain):
+    """
+    處理 xcstrings 檔案的翻譯
+    """
+    stats = TranslationStats()
+    
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    
+    strings = data.get('strings', {})
+    total_strings = len(strings)
+    print(f"\n{Fore.CYAN}找到 {total_strings} 個字串需要翻譯{Style.RESET_ALL}")
+    
+    for i, (key, content) in enumerate(strings.items()):
+        print(f"\n{Fore.YELLOW}處理第 {i+1}/{total_strings} 個字串{Style.RESET_ALL}")
+        print(f"鍵值: {key}")
+        
+        localizations = content.get('localizations', {})
+        target_localization = localizations.get(target_lang, {})
+        
+        # 檢查是否已有翻譯
+        if target_lang in localizations and not translate_all:
+            string_unit = target_localization.get('stringUnit', {})
+            if string_unit.get('state') == 'translated':
+                print(f"{Fore.GREEN}已有翻譯，跳過{Style.RESET_ALL}")
+                continue
+        
+        # 使用英文版作為原文
+        source_text = key
+        if 'en' in localizations:
+            en_unit = localizations.get('en', {}).get('stringUnit', {})
+            if en_unit.get('value'):
+                source_text = en_unit['value']
+        
+        translated_text = translate_text(source_text, target_lang, use_deepl, deepl_api_key, stats, domain)
+        
+        if supervised:
+            choice = input(f"\n{Fore.YELLOW}是否接受此翻譯？(y/n): {Style.RESET_ALL}").lower()
+            if choice != 'y':
+                print("跳過此翻譯")
+                continue
+        
+        # 更新或創建目標語言的翻譯
+        if target_lang not in localizations:
+            localizations[target_lang] = {}
+        
+        localizations[target_lang] = {
+            'stringUnit': {
+                'state': 'translated',
+                'value': translated_text
+            }
+        }
+        
+        print(f"{Fore.GREEN}>>> 更新翻譯: {translated_text}{Style.RESET_ALL}")
+    
+    stats.print_stats()
+    
+    # 儲存更新後的檔案
+    with open(output_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)
+    print(f"翻譯完成，已儲存到 {output_path}")
+
+def get_file_type(file_path):
+    """
+    根據檔案副檔名判斷檔案類型
+    """
+    ext = file_path.lower().split('.')[-1]
+    if ext == 'xliff':
+        return 'xliff'
+    elif ext == 'xcstrings':
+        return 'xcstrings'
+    else:
+        raise ValueError(f"不支援的檔案格式: {ext}")
+
+def get_output_filename(input_path, target_lang):
+    """
+    根據輸入檔名生成輸出檔名，保持原始副檔名
+    格式：原檔名_語言_年月日時分.原副檔名
+    """
+    base_name = os.path.splitext(input_path)[0]
+    ext = os.path.splitext(input_path)[1]
+    timestamp = datetime.now().strftime('%Y%m%d%H%M')
+    return f"{base_name}_{target_lang}_{timestamp}{ext}"
+
+def main():
+    parser = argparse.ArgumentParser(description="XLIFF 翻譯工具")
+    parser.add_argument("-t", "--target-lang", required=True, help="目標語言，如 ZH-HANT")
+    parser.add_argument("-i", "--input", required=True, help="輸入 XLIFF 文件")
+    parser.add_argument("-all", action="store_true", help="翻譯所有 target，包括已翻譯的")
+    parser.add_argument("-supervised", action="store_true", help="啟用監督模式，每次翻譯後需要確認")
+    parser.add_argument("-deepl", action="store_true", help="使用 DeepL API 進行翻譯")
+    parser.add_argument("--deepl-key", type=str, help="DeepL API 金鑰")
+    parser.add_argument("-d", "--domain", default="軟體介面", type=str,
+                       help="翻譯領域，例如：軟體介面、醫療、法律、工程技術等")
+    
+    args = parser.parse_args()
+    
+    # 檢測檔案類型
+    try:
+        file_type = get_file_type(args.input)
+        print(f"檔案類型: {file_type}")
+    except ValueError as e:
+        print(f"{Fore.RED}錯誤: {e}{Style.RESET_ALL}")
+        return
+
+    # 自動生成輸出檔名，保持原始副檔名
+    output_path = get_output_filename(args.input, args.target_lang)
+    
+    # 顯示設定確認
+    print(f"\n{Fore.YELLOW}=== 翻譯設定 ==={Style.RESET_ALL}")
+    print(f"目標語言: {args.target_lang}")
+    print(f"輸入檔案: {args.input}")
+    print(f"輸出檔案: {output_path}")
+    print(f"翻譯領域: {args.domain}")
+    print(f"翻譯所有項目: {args.all}")
+    print(f"監督模式: {args.supervised}")
+    print(f"使用 DeepL: {args.deepl}")
+    print(f"DeepL API Key: {'已設定' if args.deepl_key else '未設定'}")
+    
+    confirm = input(f"\n{Fore.YELLOW}是否確認開始翻譯？(y/n): {Style.RESET_ALL}").lower()
+    if confirm != 'y':
+        print("取消翻譯")
+        return
+    
+    # 根據檔案類型選擇處理方法
+    if file_type == 'xliff':
+        process_xliff(args.input, output_path, args.target_lang, args.all, 
+                     args.supervised, args.deepl, args.deepl_key, args.domain)
+    elif file_type == 'xcstrings':
+        process_xcstrings(args.input, output_path, args.target_lang, args.all, 
+                        args.supervised, args.deepl, args.deepl_key, args.domain)
+
+if __name__ == "__main__":
+    main()
