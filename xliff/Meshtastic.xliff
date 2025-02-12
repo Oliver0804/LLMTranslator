@@ -1,0 +1,2176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file id="8" original="/master/strings.xml" source-language="en" target-language="zh-TW" datatype="plaintext" project-id="8" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="2" resname="fr_HT" translate="no">
+        <source>Kreyòl ayisyen</source>
+        <target>Kreyòl ayisyen</target>
+        <context-group purpose="information">
+          <context context-type="source">fr_HT</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4" resname="pt_BR" translate="no">
+        <source>Português do Brasil</source>
+        <target>Português do Brasil</target>
+        <context-group purpose="information">
+          <context context-type="source">pt_BR</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="384" resname="zh_CN" translate="no">
+        <source>简体中文</source>
+        <target>简体中文</target>
+        <context-group purpose="information">
+          <context context-type="source">zh_CN</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="386" resname="zh_TW" translate="no">
+        <source>繁體中文</source>
+        <target>繁體中文</target>
+        <context-group purpose="information">
+          <context context-type="source">zh_TW</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6" resname="app_name" translate="no">
+        <source>Meshtastic</source>
+        <target>Meshtastic</target>
+        <context-group purpose="information">
+          <context context-type="source">app_name</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8" resname="sample_distance" translate="no">
+        <source>2.13 km</source>
+        <target>2.13 km</target>
+        <context-group purpose="information">
+          <context context-type="source">sample_distance</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="10" resname="some_username" translate="no">
+        <source>SKH</source>
+        <target>SKH</target>
+        <context-group purpose="information">
+          <context context-type="source">some_username</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12" resname="test_devname1" translate="no">
+        <source>Meshtastic_ac23</source>
+        <target>Meshtastic_ac23</target>
+        <context-group purpose="information">
+          <context context-type="source">test_devname1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14" resname="test_devname2" translate="no">
+        <source>Meshtastic_1267</source>
+        <target>Meshtastic_1267</target>
+        <context-group purpose="information">
+          <context context-type="source">test_devname2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="16" resname="sample_coords" translate="no">
+        <source>55.332244 34.442211</source>
+        <target>55.332244 34.442211</target>
+        <context-group purpose="information">
+          <context context-type="source">sample_coords</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18" resname="sample_message" translate="no">
+        <source>hey I found the cache, it is over here next to the big tiger. I'm kinda scared.</source>
+        <target>hey I found the cache, it is over here next to the big tiger. I'm kinda scared.</target>
+        <context-group purpose="information">
+          <context context-type="source">sample_message</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="388" resname="unknown_node_short_name" translate="no">
+        <source>\???</source>
+        <target>\???</target>
+        <context-group purpose="information">
+          <context context-type="source">unknown_node_short_name</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="390" resname="node_filter_placeholder">
+        <source>Filter</source>
+        <target state="translated">篩選條件</target>
+        <context-group purpose="information">
+          <context context-type="source">node_filter_placeholder</context>
+          <context context-type="x-crowdin-screenshot-1">https://meshtastic.crowdin.com/s/wrap/e3l533b3t6a3k4d383s41363733333p4l483n436f3939333n4p44603i473p48643t2b393n4p4g423q4i373q446d3o4a3g356a3u25515t4?t=390</context>
+          <context context-type="x-crowdin-screenshot-2">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=390</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="392" resname="desc_node_filter_clear">
+        <source>clear node filter</source>
+        <target state="translated">清除節點篩選條件</target>
+        <context-group purpose="information">
+          <context context-type="source">desc_node_filter_clear</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="413" resname="node_filter_include_unknown">
+        <source>Include unknown</source>
+        <target state="translated">顯示未知節點</target>
+        <context-group purpose="information">
+          <context context-type="source">node_filter_include_unknown</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=413</context>
+        </context-group>
+        <note from="micropicostack" priority="4">Võib olla &quot;Näita tundmatuid&quot; sobiks isegi paremini, sest sellele vajutades näidatakse ka tundamtuid sõlmi nimekirjas</note>
+      </trans-unit>
+      <trans-unit id="429" resname="node_filter_show_details">
+        <source>Show details</source>
+        <target state="translated">顯示詳細資料</target>
+        <context-group purpose="information">
+          <context context-type="source">node_filter_show_details</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="415" resname="node_sort_alpha">
+        <source>A-Z</source>
+        <target state="translated">依名字排序</target>
+        <context-group purpose="information">
+          <context context-type="source">node_sort_alpha</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=415</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="417" resname="node_sort_channel">
+        <source>Channel</source>
+        <target state="translated">頻道</target>
+        <context-group purpose="information">
+          <context context-type="source">node_sort_channel</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=417</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="419" resname="node_sort_distance">
+        <source>Distance</source>
+        <target state="translated">距離</target>
+        <context-group purpose="information">
+          <context context-type="source">node_sort_distance</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=419</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="421" resname="node_sort_hops_away">
+        <source>Hops away</source>
+        <target state="translated">依轉跳排序</target>
+        <context-group purpose="information">
+          <context context-type="source">node_sort_hops_away</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=421</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="423" resname="node_sort_last_heard">
+        <source>Last heard</source>
+        <target state="translated">最近一次收到排序</target>
+        <context-group purpose="information">
+          <context context-type="source">node_sort_last_heard</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=423</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="425" resname="node_sort_via_mqtt">
+        <source>via MQTT</source>
+        <target state="translated">有節點MQTT排序</target>
+        <context-group purpose="information">
+          <context context-type="source">node_sort_via_mqtt</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533c3t6a466b5t496v435t425a5m4331383l463e3739346k4j413m473o41604l455t48566m665v4s4v215h6u4?t=425</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="431" resname="unrecognized">
+        <source>Unrecognized</source>
+        <target state="translated">無法識別</target>
+        <context-group purpose="information">
+          <context context-type="source">unrecognized</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="433" resname="message_status_enroute">
+        <source>Waiting to be acknowledged</source>
+        <target state="translated">正在等待確認</target>
+        <context-group purpose="information">
+          <context context-type="source">message_status_enroute</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="435" resname="message_status_queued">
+        <source>Queued for sending</source>
+        <target state="translated">發送佇列中</target>
+        <context-group purpose="information">
+          <context context-type="source">message_status_queued</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="437" resname="routing_error_none">
+        <source>Acknowledged</source>
+        <target state="translated">已確認</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_none</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="439" resname="routing_error_no_route">
+        <source>No route</source>
+        <target state="translated">無路徑</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_no_route</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="441" resname="routing_error_got_nak">
+        <source>Received a negative acknowledgment</source>
+        <target state="translated">接收到拒絕確認</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_got_nak</context>
+        </context-group>
+        <note from="Kayra Gündoğar ÇETİN" priority="4">I need some context. I've never seen it in app, thank you in advance.</note>
+        <note from="andrekir" priority="4">This is one of the errors when a message fails to send (cloud crossed out). Clicking the cloud icon shows a dialog with this text.</note>
+      </trans-unit>
+      <trans-unit id="443" resname="routing_error_timeout">
+        <source>Timeout</source>
+        <target state="translated">逾時</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_timeout</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="445" resname="routing_error_no_interface">
+        <source>No Interface</source>
+        <target state="translated">無介面</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_no_interface</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="447" resname="routing_error_max_retransmit">
+        <source>Max Retransmission Reached</source>
+        <target state="translated">已達最大重新發送次數</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_max_retransmit</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="449" resname="routing_error_no_channel">
+        <source>No Channel</source>
+        <target state="translated">無頻道</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_no_channel</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="451" resname="routing_error_too_large">
+        <source>Packet too large</source>
+        <target state="translated">封包過大</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_too_large</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="453" resname="routing_error_no_response">
+        <source>No response</source>
+        <target state="translated">無回應</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_no_response</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="455" resname="routing_error_bad_request">
+        <source>Bad Request</source>
+        <target state="translated">錯誤請求</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_bad_request</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="457" resname="routing_error_duty_cycle_limit">
+        <source>Regional Duty Cycle Limit Reached</source>
+        <target state="translated">已觸及區域工作週期之上限</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_duty_cycle_limit</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="459" resname="routing_error_not_authorized">
+        <source>Not Authorized</source>
+        <target state="translated">未授權</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_not_authorized</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="461" resname="routing_error_pki_failed">
+        <source>Encrypted Send Failed</source>
+        <target state="translated">加密發送錯誤</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_pki_failed</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="463" resname="routing_error_pki_unknown_pubkey">
+        <source>Unknown Public Key</source>
+        <target state="translated">未知公鑰</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_pki_unknown_pubkey</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1111" resname="routing_error_admin_bad_session_key">
+        <source>Bad session key</source>
+        <target state="translated">會話密鑰（Session key）錯誤</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_admin_bad_session_key</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1113" resname="routing_error_admin_public_key_unauthorized">
+        <source>Public Key unauthorized</source>
+        <target state="translated">無法識別公鑰</target>
+        <context-group purpose="information">
+          <context context-type="source">routing_error_admin_public_key_unauthorized</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="465" resname="role_client">
+        <source>App connected or standalone messaging device.</source>
+        <target state="translated">已 App 連線或離線型的通訊裝置。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_client</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="467" resname="role_client_mute">
+        <source>Device that does not forward packets from other devices.</source>
+        <target state="translated">對其他裝置封包不予轉播的節點。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_client_mute</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="469" resname="role_router">
+        <source>Infrastructure node for extending network coverage by relaying messages. Visible in nodes list.</source>
+        <target state="translated">加強網路覆蓋的中繼基地台節點。顯示在節點列表上。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_router</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1115" resname="role_router_client">
+        <source>Combination of both ROUTER and CLIENT. Not for mobile devices.</source>
+        <target state="translated">兼具路由器和用戶端功能的節點。行動裝置不宜使用。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_router_client</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="473" resname="role_repeater">
+        <source>Infrastructure node for extending network coverage by relaying messages with minimal overhead. Not visible in nodes list.</source>
+        <target state="translated">加強網路覆蓋的中繼基地台節點，但轉播時僅添加最低限度的額外負擔（Overhead）。不會顯示在節點列表上。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_repeater</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="475" resname="role_tracker">
+        <source>Broadcasts GPS position packets as priority.</source>
+        <target state="translated">GPS 定位封包廣播優先。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_tracker</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="477" resname="role_sensor">
+        <source>Broadcasts telemetry packets as priority.</source>
+        <target state="translated">感測資料封包廣播優先。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_sensor</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="479" resname="role_tak">
+        <source>Optimized for ATAK system communication, reduces routine broadcasts.</source>
+        <target state="translated">ATAK 系統通訊優先，將減少定期廣播。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_tak</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="481" resname="role_client_hidden">
+        <source>Device that only broadcasts as needed for stealth or power savings.</source>
+        <target state="translated">基於省電或隱私需求，僅提供最低限度廣播通訊的節點。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_client_hidden</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="483" resname="role_lost_and_found">
+        <source>Broadcasts location as message to default channel regularly for to assist with device recovery.</source>
+        <target state="translated">定期向預設頻道播送定位的裝置，以便於裝置復原。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_lost_and_found</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="485" resname="role_tak_tracker">
+        <source>Enables automatic TAK PLI broadcasts and reduces routine broadcasts.</source>
+        <target state="translated">啓用自動 TAK PLI 廣播，將減少定期廣播。</target>
+        <context-group purpose="information">
+          <context context-type="source">role_tak_tracker</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1777" resname="role_router_late">
+        <source>Infrastructure node that always rebroadcasts packets once but only after all other modes, ensuring additional coverage for local clusters. Visible in nodes list.</source>
+        <target state="needs-translation">Infrastructure node that always rebroadcasts packets once but only after all other modes, ensuring additional coverage for local clusters. Visible in nodes list.</target>
+        <context-group purpose="information">
+          <context context-type="source">role_router_late</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1117" resname="rebroadcast_mode_all">
+        <source>Rebroadcast any observed message, if it was on our private channel or from another mesh with the same lora parameters.</source>
+        <target state="needs-translation">Rebroadcast any observed message, if it was on our private channel or from another mesh with the same lora parameters.</target>
+        <context-group purpose="information">
+          <context context-type="source">rebroadcast_mode_all</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1119" resname="rebroadcast_mode_all_skip_decoding">
+        <source>Same as behavior as ALL but skips packet decoding and simply rebroadcasts them. Only available in Repeater role. Setting this on any other roles will result in ALL behavior.</source>
+        <target state="needs-translation">Same as behavior as ALL but skips packet decoding and simply rebroadcasts them. Only available in Repeater role. Setting this on any other roles will result in ALL behavior.</target>
+        <context-group purpose="information">
+          <context context-type="source">rebroadcast_mode_all_skip_decoding</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1121" resname="rebroadcast_mode_local_only">
+        <source>Ignores observed messages from foreign meshes that are open or those which it cannot decrypt. Only rebroadcasts message on the nodes local primary / secondary channels.</source>
+        <target state="needs-translation">Ignores observed messages from foreign meshes that are open or those which it cannot decrypt. Only rebroadcasts message on the nodes local primary / secondary channels.</target>
+        <context-group purpose="information">
+          <context context-type="source">rebroadcast_mode_local_only</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1123" resname="rebroadcast_mode_known_only">
+        <source>Ignores observed messages from foreign meshes like LOCAL ONLY, but takes it step further by also ignoring messages from nodes not already in the node's known list.</source>
+        <target state="translated">近似於 LOCAL_ONLY 角色，將忽略來自外部Mesh節點的訊息，同時也忽略已知節點列表以外節點的訊息。</target>
+        <context-group purpose="information">
+          <context context-type="source">rebroadcast_mode_known_only</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1125" resname="rebroadcast_mode_none">
+        <source>Only permitted for SENSOR, TRACKER and TAK_TRACKER roles, this will inhibit all rebroadcasts, not unlike CLIENT_MUTE role.</source>
+        <target state="translated">僅允許 SENSOR、TRACKER 和 TAK_TRACKER 角色，與 CLIENT_MUTE 角色不同，此模式將禁止所有重新廣播行為。</target>
+        <context-group purpose="information">
+          <context context-type="source">rebroadcast_mode_none</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1127" resname="rebroadcast_mode_core_portnums_only">
+        <source>Ignores packets from non-standard portnums such as: TAK, RangeTest, PaxCounter, etc. Only rebroadcasts packets with standard portnums: NodeInfo, Text, Position, Telemetry, and Routing.</source>
+        <target state="translated">忽略來自非標準通訊埠號（諸如 TAK、RangeTest、PaxCounter 等）的封包，僅重新廣播標準通訊埠號的封包：NodeInfo、Text、Position、Telemetry 和 Routing。</target>
+        <context-group purpose="information">
+          <context context-type="source">rebroadcast_mode_core_portnums_only</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1779" resname="config_device_doubleTapAsButtonPress_summary">
+        <source>Treat double tap on supported accelerometers as a user button press.</source>
+        <target state="translated">將支援加速度計上的雙撃行為視作按壓使用者按鍵。</target>
+        <context-group purpose="information">
+          <context context-type="source">config_device_doubleTapAsButtonPress_summary</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1781" resname="config_device_disableTripleClick_summary">
+        <source>Disables the triple-press of user button to enable or disable GPS.</source>
+        <target state="translated">停用透過點擊使用者按鈕三次開啓/關閉 GPS 功能。</target>
+        <context-group purpose="information">
+          <context context-type="source">config_device_disableTripleClick_summary</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1783" resname="config_device_ledHeartbeatDisabled_summary">
+        <source>Controls the blinking LED on the device. For most devices this will control one of the up to 4 LEDs, the charger and GPS LEDs are not controllable.</source>
+        <target state="needs-translation">Controls the blinking LED on the device. For most devices this will control one of the up to 4 LEDs, the charger and GPS LEDs are not controllable.</target>
+        <context-group purpose="information">
+          <context context-type="source">config_device_ledHeartbeatDisabled_summary</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1785" resname="config_device_transmitOverLora_summary">
+        <source>Whether in addition to sending it to MQTT and the PhoneAPI, our NeighborInfo should be transmitted over LoRa. Not available on a channel with default key and name.</source>
+        <target state="needs-translation">Whether in addition to sending it to MQTT and the PhoneAPI, our NeighborInfo should be transmitted over LoRa. Not available on a channel with default key and name.</target>
+        <context-group purpose="information">
+          <context context-type="source">config_device_transmitOverLora_summary</context>
+        </context-group>
+        <note from="mrmelk" priority="4">Korrekt?</note>
+      </trans-unit>
+      <trans-unit id="1787" resname="config_security_public_key">
+        <source>Public Key</source>
+        <target state="translated">公鑰</target>
+        <context-group purpose="information">
+          <context context-type="source">config_security_public_key</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1789" resname="config_security_private_key">
+        <source>Private Key</source>
+        <target state="translated">私鑰</target>
+        <context-group purpose="information">
+          <context context-type="source">config_security_private_key</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="394" resname="elevation_suffix" translate="no">
+        <source>MSL</source>
+        <target>MSL</target>
+        <context-group purpose="information">
+          <context context-type="source">elevation_suffix</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="487" resname="channel_air_util" translate="no">
+        <source>ChUtil %.1f%% AirUtilTX %.1f%%</source>
+        <target>ChUtil %.1f%% AirUtilTX %.1f%%</target>
+        <context-group purpose="information">
+          <context context-type="source">channel_air_util</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20" resname="channel_name">
+        <source>Channel Name</source>
+        <target state="translated">頻道名稱</target>
+        <context-group purpose="information">
+          <context context-type="source">channel_name</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22" resname="channel_options">
+        <source>Channel options</source>
+        <target state="translated">頻道選項</target>
+        <context-group purpose="information">
+          <context context-type="source">channel_options</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="24" resname="qr_code">
+        <source>QR code</source>
+        <target state="translated">QRCODE</target>
+        <context-group purpose="information">
+          <context context-type="source">qr_code</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="26" resname="unset">
+        <source>Unset</source>
+        <target state="translated">取消設定</target>
+        <context-group purpose="information">
+          <context context-type="source">unset</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28" resname="connection_status">
+        <source>Connection status</source>
+        <target state="translated">連線狀態</target>
+        <context-group purpose="information">
+          <context context-type="source">connection_status</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30" resname="application_icon">
+        <source>application icon</source>
+        <target state="translated">應用程式圖示</target>
+        <context-group purpose="information">
+          <context context-type="source">application_icon</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32" resname="unknown_username">
+        <source>Unknown Username</source>
+        <target state="translated">未知的使用者名稱</target>
+        <context-group purpose="information">
+          <context context-type="source">unknown_username</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="326" resname="send">
+        <source>Send</source>
+        <target state="translated">傳送</target>
+        <context-group purpose="information">
+          <context context-type="source">send</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34" resname="send_text">
+        <source>Send Text</source>
+        <target state="translated">傳送訊息</target>
+        <context-group purpose="information">
+          <context context-type="source">send_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1791" resname="warning_not_paired" translate="no">
+        <source>You haven't yet paired a Meshtastic compatible radio with this phone. Please pair a device and set your username.\n\nThis open-source application is in development, if you find problems please post on our forum: https://github.com/orgs/meshtastic/discussions.\n\nFor more information see our web page - www.meshtastic.org.</source>
+        <target>You haven't yet paired a Meshtastic compatible radio with this phone. Please pair a device and set your username.\n\nThis open-source application is in development, if you find problems please post on our forum: https://github.com/orgs/meshtastic/discussions.\n\nFor more information see our web page - www.meshtastic.org.</target>
+        <context-group purpose="information">
+          <context context-type="source">warning_not_paired</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="328" resname="you">
+        <source>You</source>
+        <target state="translated">你</target>
+        <context-group purpose="information">
+          <context context-type="source">you</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l52373t6a466b5t496v435t425a5m4331383k4639373b346k4q403o483s41604l455t48566m665v4s4v215h6u4?t=328</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="38" resname="your_name">
+        <source>Your Name</source>
+        <target state="translated">你的名稱</target>
+        <context-group purpose="information">
+          <context context-type="source">your_name</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="40" resname="analytics_okay">
+        <source>Anonymous usage statistics and crash reports.</source>
+        <target state="translated">匿名使用統計資訊和故障報告</target>
+        <context-group purpose="information">
+          <context context-type="source">analytics_okay</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42" resname="looking_for_meshtastic_devices">
+        <source>Looking for Meshtastic devices…</source>
+        <target state="translated">正在尋找 Meshtastic 裝置...</target>
+        <context-group purpose="information">
+          <context context-type="source">looking_for_meshtastic_devices</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="44" resname="starting_pairing">
+        <source>Starting pairing</source>
+        <target state="translated">開始配對</target>
+        <context-group purpose="information">
+          <context context-type="source">starting_pairing</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="46" resname="url_for_join">
+        <source>A URL for joining a Meshtastic mesh</source>
+        <target state="translated">加入 Meshtastic 網狀網路的 URL</target>
+        <context-group purpose="information">
+          <context context-type="source">url_for_join</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="48" resname="accept">
+        <source>Accept</source>
+        <target state="translated">接受</target>
+        <context-group purpose="information">
+          <context context-type="source">accept</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="50" resname="cancel">
+        <source>Cancel</source>
+        <target state="translated">取消</target>
+        <context-group purpose="information">
+          <context context-type="source">cancel</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52" resname="change_channel">
+        <source>Change channel</source>
+        <target state="translated">切換頻道</target>
+        <context-group purpose="information">
+          <context context-type="source">change_channel</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l553j5k5q4l6u4t4i645o44575l493133393h48383b333l4p4j463n463k4c635n4?t=52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54" resname="are_you_sure_channel">
+        <source>Are you sure you want to change the channel? All communication with other nodes will stop until you share the new channel settings.</source>
+        <target state="translated">您確定要更改頻道嗎？在您分享新的頻道設定之前，與其他節點的所有通訊都將停止。</target>
+        <context-group purpose="information">
+          <context context-type="source">are_you_sure_channel</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l553j5k5q4l6u4t4i645o44575l493133393h48383b333l4p4j463n463k4c635n4?t=54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="56" resname="new_channel_rcvd">
+        <source>New Channel URL received</source>
+        <target state="translated">收到新的頻道 URL</target>
+        <context-group purpose="information">
+          <context context-type="source">new_channel_rcvd</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="60" resname="permission_missing">
+        <source>Meshtastic needs location permission and location must be turned on to find new devices via Bluetooth. You can turn it off again afterwards.</source>
+        <target state="translated">Meshtastic 需要位置權限並啟用位置信息才能通過藍牙查找新設備。找到之後可以再關閉這權限。</target>
+        <context-group purpose="information">
+          <context context-type="source">permission_missing</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="64" resname="report_bug">
+        <source>Report Bug</source>
+        <target state="translated">回報BUG</target>
+        <context-group purpose="information">
+          <context context-type="source">report_bug</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="66" resname="report_a_bug">
+        <source>Report a bug</source>
+        <target state="translated">回報問題</target>
+        <context-group purpose="information">
+          <context context-type="source">report_a_bug</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68" resname="report_bug_text">
+        <source>Are you sure you want to report a bug? After reporting, please post in https://github.com/orgs/meshtastic/discussions so we can match up the report with what you found.</source>
+        <target state="translated">您確定要報告錯誤嗎？報告後，請在 https://github.com/orgs/meshtastic/discussions 上貼文，以便我們可以將報告與您發現的問題匹配。</target>
+        <context-group purpose="information">
+          <context context-type="source">report_bug_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70" resname="report">
+        <source>Report</source>
+        <target state="translated">報告</target>
+        <context-group purpose="information">
+          <context context-type="source">report</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72" resname="not_paired_yet">
+        <source>You have not paired a radio yet.</source>
+        <target state="translated">您還沒有配對.</target>
+        <context-group purpose="information">
+          <context context-type="source">not_paired_yet</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="74" resname="change_radio">
+        <source>Change radio</source>
+        <target state="translated">換設備</target>
+        <context-group purpose="information">
+          <context context-type="source">change_radio</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76" resname="pairing_completed">
+        <source>Pairing completed, starting service</source>
+        <target state="translated">配對完成，開始服務</target>
+        <context-group purpose="information">
+          <context context-type="source">pairing_completed</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78" resname="pairing_failed_try_again">
+        <source>Pairing failed, please select again</source>
+        <target state="translated">配對失敗，請重新選擇</target>
+        <context-group purpose="information">
+          <context context-type="source">pairing_failed_try_again</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80" resname="location_disabled">
+        <source>Location access is turned off, can not provide position to mesh.</source>
+        <target state="translated">位置訪問已關閉,無法向設備提供位置.</target>
+        <context-group purpose="information">
+          <context context-type="source">location_disabled</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="82" resname="share">
+        <source>Share</source>
+        <target state="translated">分享</target>
+        <context-group purpose="information">
+          <context context-type="source">share</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84" resname="disconnected">
+        <source>Disconnected</source>
+        <target state="translated">已中斷連線</target>
+        <context-group purpose="information">
+          <context context-type="source">disconnected</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="86" resname="device_sleeping">
+        <source>Device sleeping</source>
+        <target state="translated">設備休眠中</target>
+        <context-group purpose="information">
+          <context context-type="source">device_sleeping</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="88" resname="connected_count">
+        <source>Connected: %1$s of %2$s online</source>
+        <target state="translated">已連接：可用的節點數 %2$s 中有 %1$s 在線</target>
+        <context-group purpose="information">
+          <context context-type="source">connected_count</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="92" resname="update_firmware">
+        <source>Update Firmware</source>
+        <target state="translated">更新韌體</target>
+        <context-group purpose="information">
+          <context context-type="source">update_firmware</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="366" resname="ip_address">
+        <source>IP Address:</source>
+        <target state="translated">IP地址：</target>
+        <context-group purpose="information">
+          <context context-type="source">ip_address</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="94" resname="connected">
+        <source>Connected to radio</source>
+        <target state="translated">連接到設備</target>
+        <context-group purpose="information">
+          <context context-type="source">connected</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96" resname="connected_to">
+        <source>Connected to radio (%s)</source>
+        <target state="translated">已連接至設備 (%s)</target>
+        <context-group purpose="information">
+          <context context-type="source">connected_to</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="98" resname="not_connected">
+        <source>Not connected</source>
+        <target state="translated">未連線</target>
+        <context-group purpose="information">
+          <context context-type="source">not_connected</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="100" resname="connected_sleeping">
+        <source>Connected to radio, but it is sleeping</source>
+        <target state="translated">已連接至無線電，但它正在休眠中</target>
+        <context-group purpose="information">
+          <context context-type="source">connected_sleeping</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="102" resname="update_to">
+        <source>Update to %s</source>
+        <target state="translated">更新到%s</target>
+        <context-group purpose="information">
+          <context context-type="source">update_to</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="104" resname="app_too_old">
+        <source>Application update required</source>
+        <target state="translated">需要應用程式更新</target>
+        <context-group purpose="information">
+          <context context-type="source">app_too_old</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="106" resname="must_update">
+        <source>You must update this application on the app store (or Github). It is too old to talk to this radio firmware.  Please read our &lt;a href=&quot;https://meshtastic.org/docs/software/android/installation&quot;&gt;docs&lt;/a&gt; on this topic.</source>
+        <target state="translated">您必須在應用商店（或 Github）更新此應用程式。它太舊無法與此無線電韌體通訊。請閱讀我們關於此主題的&lt;a href=&quot;https://meshtastic.org/docs/software/android/installation&quot;&gt;文件&lt;/a&gt;。</target>
+        <context-group purpose="information">
+          <context context-type="source">must_update</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="108" resname="none">
+        <source>None (disable)</source>
+        <target state="translated">無（停用）</target>
+        <context-group purpose="information">
+          <context context-type="source">none</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523b3t6a466b5t496v435t425a5m4331383l4639363e3i4k4j433r463v4g4t405p4?t=108</context>
+        </context-group>
+        <note from="Naomi Gumpel" priority="4">Can I get context on this?</note>
+        <note from="andrekir" priority="4">added screenshot.</note>
+        <note from="ea360" priority="4">All is ok !</note>
+      </trans-unit>
+      <trans-unit id="489" resname="modem_config_turbo">
+        <source>Short Range / Turbo</source>
+        <target state="translated">短距離 / Turbo</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_turbo</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="110" resname="modem_config_short">
+        <source>Short Range / Fast</source>
+        <target state="translated">短距離（速度快）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_short</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="112" resname="modem_config_medium">
+        <source>Medium Range / Fast</source>
+        <target state="translated">中等距離（速度快）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_medium</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="114" resname="modem_config_long">
+        <source>Long Range / Fast</source>
+        <target state="translated">長距離 （速度快）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_long</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="343" resname="modem_config_mod_long">
+        <source>Long Range / Moderate</source>
+        <target state="translated">長距離（中等速度）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_mod_long</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="116" resname="modem_config_very_long">
+        <source>Very Long Range / Slow</source>
+        <target state="translated">遠距離（速度慢）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_very_long</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="118" resname="modem_config_unrecognized">
+        <source>UNRECOGNIZED</source>
+        <target state="translated">無法識別</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_unrecognized</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="120" resname="meshtastic_service_notifications">
+        <source>Service notifications</source>
+        <target state="translated">服務通知</target>
+        <context-group purpose="information">
+          <context context-type="source">meshtastic_service_notifications</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="491" resname="location_disabled_warning">
+        <source>Location must be turned on to find new devices via Bluetooth. You can turn it off again afterwards.</source>
+        <target state="translated">必須開啟位置設定才能通過藍牙尋找新裝置。之後可以再關閉位置設定。</target>
+        <context-group purpose="information">
+          <context context-type="source">location_disabled_warning</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="124" resname="about">
+        <source>About</source>
+        <target state="translated">關於</target>
+        <context-group purpose="information">
+          <context context-type="source">about</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="128" resname="text_messages">
+        <source>Text messages</source>
+        <target state="translated">文字訊息</target>
+        <context-group purpose="information">
+          <context context-type="source">text_messages</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="130" resname="channel_invalid">
+        <source>This Channel URL is invalid and can not be used</source>
+        <target state="translated">此頻道 URL 無效，無法使用</target>
+        <context-group purpose="information">
+          <context context-type="source">channel_invalid</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="132" resname="debug_panel">
+        <source>Debug Panel</source>
+        <target state="translated">除錯面板</target>
+        <context-group purpose="information">
+          <context context-type="source">debug_panel</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="134" resname="debug_last_messages">
+        <source>500 last messages</source>
+        <target state="translated">最後 500 則訊息</target>
+        <context-group purpose="information">
+          <context context-type="source">debug_last_messages</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="136" resname="clear">
+        <source>Clear</source>
+        <target state="translated">清除</target>
+        <context-group purpose="information">
+          <context context-type="source">clear</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="138" resname="updating_firmware">
+        <source>Updating firmware, wait up to eight minutes…</source>
+        <target state="translated">更新韌體中，請等待最多八分鐘…</target>
+        <context-group purpose="information">
+          <context context-type="source">updating_firmware</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="140" resname="update_successful">
+        <source>Update successful</source>
+        <target state="translated">更新成功</target>
+        <context-group purpose="information">
+          <context context-type="source">update_successful</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="142" resname="update_failed">
+        <source>Update failed</source>
+        <target state="translated">更新失敗</target>
+        <context-group purpose="information">
+          <context context-type="source">update_failed</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="144" resname="message_reception_time">
+        <source>message reception time</source>
+        <target state="translated">訊息接收時間</target>
+        <context-group purpose="information">
+          <context context-type="source">message_reception_time</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533j5k5q4l6u4t4i645o44575l493133393h48383b333l4m4m443q433k4c635n4?t=144</context>
+        </context-group>
+        <note from="KomaruKirinashi" priority="4">Is this a length of time e.g. 5 minutes, or a specific time, e.g. 14:45?</note>
+        <note from="andrekir" priority="4">this string is a content description for the Contacts card (added screenshot). it can be just the time or date + time.</note>
+      </trans-unit>
+      <trans-unit id="146" resname="message_reception_state">
+        <source>message reception state</source>
+        <target state="translated">訊息接收狀態</target>
+        <context-group purpose="information">
+          <context context-type="source">message_reception_state</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="148" resname="message_delivery_status">
+        <source>Message delivery status</source>
+        <target state="translated">訊息傳遞狀態</target>
+        <context-group purpose="information">
+          <context context-type="source">message_delivery_status</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="150" resname="meshtastic_messages_notifications">
+        <source>Message notifications</source>
+        <target state="translated">訊息通知</target>
+        <context-group purpose="information">
+          <context context-type="source">meshtastic_messages_notifications</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="152" resname="protocol_stress_test">
+        <source>Protocol stress test</source>
+        <target state="translated">通訊協定壓力測試</target>
+        <context-group purpose="information">
+          <context context-type="source">protocol_stress_test</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="154" resname="firmware_too_old">
+        <source>Firmware update required</source>
+        <target state="translated">需要更新韌體</target>
+        <context-group purpose="information">
+          <context context-type="source">firmware_too_old</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="156" resname="firmware_old">
+        <source>The radio firmware is too old to talk to this application. For more information on this see &lt;a href=&quot;https://meshtastic.org/docs/getting-started/flashing-firmware&quot;&gt;our Firmware Installation guide&lt;/a&gt;.</source>
+        <target state="translated">無法與此應用程式通訊，無線電韌體太舊。有關詳細信息，請參閱&lt;a href=&quot;https://meshtastic.org/docs/getting-started/flashing-firmware&quot;&gt;我們的韌體安裝指南&lt;/a&gt;。</target>
+        <context-group purpose="information">
+          <context context-type="source">firmware_old</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="158" resname="okay">
+        <source>OK</source>
+        <target state="translated">好的</target>
+        <context-group purpose="information">
+          <context context-type="source">okay</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="160" resname="must_set_region">
+        <source>You must set a region!</source>
+        <target state="translated">您必須設定一個區域！</target>
+        <context-group purpose="information">
+          <context context-type="source">must_set_region</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="162" resname="region">
+        <source>Region</source>
+        <target state="translated">地區</target>
+        <context-group purpose="information">
+          <context context-type="source">region</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="164" resname="cant_change_no_radio">
+        <source>Couldn't change channel, because radio is not yet connected. Please try again.</source>
+        <target state="translated">無法更改頻道，因為裝置尚未連接。請再試一次。</target>
+        <context-group purpose="information">
+          <context context-type="source">cant_change_no_radio</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="166" resname="save_messages">
+        <source>Export rangetest.csv</source>
+        <target state="translated">匯出  範圍測試.csv</target>
+        <context-group purpose="information">
+          <context context-type="source">save_messages</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="168" resname="reset">
+        <source>Reset</source>
+        <target state="translated">重設</target>
+        <context-group purpose="information">
+          <context context-type="source">reset</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="170" resname="scan">
+        <source>Scan</source>
+        <target state="translated">掃描</target>
+        <context-group purpose="information">
+          <context context-type="source">scan</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="172" resname="are_you_sure_change_default">
+        <source>Are you sure you want to change to the default channel?</source>
+        <target state="translated">您確定要切換到預設頻道嗎？</target>
+        <context-group purpose="information">
+          <context context-type="source">are_you_sure_change_default</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="174" resname="reset_to_defaults">
+        <source>Reset to defaults</source>
+        <target state="translated">恢復預設設置</target>
+        <context-group purpose="information">
+          <context context-type="source">reset_to_defaults</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="176" resname="apply">
+        <source>Apply</source>
+        <target state="translated">套用</target>
+        <context-group purpose="information">
+          <context context-type="source">apply</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="178" resname="no_app_found">
+        <source>No application found to send URLs</source>
+        <target state="translated">找不到應用程式來發送網址。</target>
+        <context-group purpose="information">
+          <context context-type="source">no_app_found</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="180" resname="theme">
+        <source>Theme</source>
+        <target state="translated">主題</target>
+        <context-group purpose="information">
+          <context context-type="source">theme</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="182" resname="theme_light">
+        <source>Light</source>
+        <target state="translated">淺色</target>
+        <context-group purpose="information">
+          <context context-type="source">theme_light</context>
+        </context-group>
+        <note from="andrekir" priority="4">For Android terminology reference in your language, check: https://support.google.com/android/answer/9730472?hl=en</note>
+      </trans-unit>
+      <trans-unit id="184" resname="theme_dark">
+        <source>Dark</source>
+        <target state="translated">深色</target>
+        <context-group purpose="information">
+          <context context-type="source">theme_dark</context>
+        </context-group>
+        <note from="andrekir" priority="4">For Android terminology reference in your language, check: https://support.google.com/android/answer/9730472?hl=en</note>
+      </trans-unit>
+      <trans-unit id="186" resname="theme_system">
+        <source>System default</source>
+        <target state="translated">系統預設</target>
+        <context-group purpose="information">
+          <context context-type="source">theme_system</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="188" resname="choose_theme">
+        <source>Choose theme</source>
+        <target state="translated">選擇主題</target>
+        <context-group purpose="information">
+          <context context-type="source">choose_theme</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="190" resname="background_required">
+        <source>Background location</source>
+        <target state="translated">背景定位</target>
+        <context-group purpose="information">
+          <context context-type="source">background_required</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="192" resname="why_background_required">
+        <source>For this feature, you must grant Location permission option &quot;Allow all the time&quot;.\nThis allows Meshtastic to read your smartphone location and send it to other members of your mesh, even when the app is closed or not in use.</source>
+        <target state="translated">使用此功能，您必須授予「一直允許」的位置權限選項。\n這允許 Meshtastic 讀取您的智慧手機位置，並在應用程式關閉或未使用時，將位置發送給網狀網絡中的其他成員。</target>
+        <context-group purpose="information">
+          <context context-type="source">why_background_required</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="194" resname="required_permissions">
+        <source>Required permissions</source>
+        <target state="translated">需要權限：</target>
+        <context-group purpose="information">
+          <context context-type="source">required_permissions</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="196" resname="provide_location_to_mesh">
+        <source>Provide phone location to mesh</source>
+        <target state="translated">將手機位置提供給Mesh網路</target>
+        <context-group purpose="information">
+          <context context-type="source">provide_location_to_mesh</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="198" resname="camera_required">
+        <source>Camera permission</source>
+        <target state="translated">相機權限</target>
+        <context-group purpose="information">
+          <context context-type="source">camera_required</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="200" resname="why_camera_required">
+        <source>We must be granted access to the camera to read QR codes. No pictures or videos will be saved.</source>
+        <target state="translated">我們必須獲得訪問攝像頭的權限才能讀取 QR 碼。不會保存任何圖片或影片。</target>
+        <context-group purpose="information">
+          <context context-type="source">why_camera_required</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="368" resname="notification_required">
+        <source>Notification permission</source>
+        <target state="translated">通知欄權限</target>
+        <context-group purpose="information">
+          <context context-type="source">notification_required</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523f3t6a466b5t496v435t425a5m4331383l4639363e346k4k403p463s41604l455t48566m665v4s4v215h6u4?t=368</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="370" resname="why_notification_required">
+        <source>Meshtastic needs permission for service and message notifications.</source>
+        <target state="translated">Meshtastic 需要取得服務和訊息通知的權限。</target>
+        <context-group purpose="information">
+          <context context-type="source">why_notification_required</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523f3t6a466b5t496v435t425a5m4331383l4639363e346k4k403p463s41604l455t48566m665v4s4v215h6u4?t=370</context>
+        </context-group>
+        <note from="Naomi Gumpel" priority="4">Can I get a screenshot for this?</note>
+        <note from="andrekir" priority="4">added screenshot</note>
+      </trans-unit>
+      <trans-unit id="372" resname="notification_denied">
+        <source>Notification permission denied. To turn on notifications, access: Android Settings &amp;gt; Apps &amp;gt; Meshtastic &amp;gt; Notifications.</source>
+        <target state="translated">通知權限已被拒絕。要啟用通知，請前往：Android 設置 &amp;gt; 應用程式 &amp;gt; Meshtastic &amp;gt; 通知。</target>
+        <context-group purpose="information">
+          <context context-type="source">notification_denied</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l53393t6a466b5t496v435t425a5m4331383l4639363e346k4k403q433n41604l455t48566m665v4s4v215h6u4?t=372</context>
+        </context-group>
+        <note from="Naomi Gumpel" priority="4">Question: in android, is the app name changed to match the UI language? Meaning, for example, if in english the phone app is called &quot;Phone&quot;, if a user has a spanish UI will the name of the phone app be &quot;Teléfono&quot;?
+
+I'm trying to decide whether to write Meshtastic in english or hebrew here.</note>
+        <note from="andrekir" priority="4">In general, the app name itself does not change based on the UI language.</note>
+      </trans-unit>
+      <trans-unit id="202" resname="modem_config_slow_short">
+        <source>Short Range / Slow</source>
+        <target state="translated">短距離（速度慢）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_slow_short</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="204" resname="modem_config_slow_medium">
+        <source>Medium Range / Slow</source>
+        <target state="translated">中等距離（速度慢）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_slow_medium</context>
+        </context-group>
+      </trans-unit>
+      <group restype="x-gettext-plurals">
+        <trans-unit id="206[0]" resname="delete_messages">
+          <source>Delete %s messages?</source>
+          <target state="translated">刪除 %s 訊息?</target>
+          <context-group purpose="information">
+            <context context-type="source">delete_messages [one] [other]</context>
+            <context context-type="x-plural-form">Form: Other</context>
+            <context context-type="x-plural-example">Translation will be used with numbers: 0-999; 1.2...</context>
+          </context-group>
+        </trans-unit>
+      </group>
+      <trans-unit id="208" resname="delete">
+        <source>Delete</source>
+        <target state="translated">刪除</target>
+        <context-group purpose="information">
+          <context context-type="source">delete</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="330" resname="delete_for_everyone">
+        <source>Delete for everyone</source>
+        <target state="translated">也從所有人的聊天紀錄中刪除</target>
+        <context-group purpose="information">
+          <context context-type="source">delete_for_everyone</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="332" resname="delete_for_me">
+        <source>Delete for me</source>
+        <target state="translated">從我的聊天紀錄中刪除</target>
+        <context-group purpose="information">
+          <context context-type="source">delete_for_me</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="210" resname="select_all">
+        <source>Select all</source>
+        <target state="translated">選擇全部</target>
+        <context-group purpose="information">
+          <context context-type="source">select_all</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="212" resname="modem_config_slow_long">
+        <source>Long Range / Slow</source>
+        <target state="translated">長距離（速度慢）</target>
+        <context-group purpose="information">
+          <context context-type="source">modem_config_slow_long</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="214" resname="map_style_selection">
+        <source>Style Selection</source>
+        <target state="translated">樣式選擇</target>
+        <context-group purpose="information">
+          <context context-type="source">map_style_selection</context>
+        </context-group>
+        <note from="Frank Bouwens" priority="4">Does this mean Light or Dark mode?</note>
+        <note from="andrekir" priority="4">'map_style_selection' refers to the selection of a map style. in this context, 'Style selection' can be interpreted as 'Source selection' for translation.</note>
+      </trans-unit>
+      <trans-unit id="216" resname="map_download_region">
+        <source>Download Region</source>
+        <target state="translated">下載區域</target>
+        <context-group purpose="information">
+          <context context-type="source">map_download_region</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l53373t6a466b5t496v435t425a5m4331383l4639363e346k4k403r483p41604l455t48566m665v4s4v215h6u4?t=216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="218" resname="name">
+        <source>Name</source>
+        <target state="translated">名稱</target>
+        <context-group purpose="information">
+          <context context-type="source">name</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l593j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4o483q43356f5o435q495l4o6n6r4p473r47586?t=218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="334" resname="description">
+        <source>Description</source>
+        <target state="translated">描述說明</target>
+        <context-group purpose="information">
+          <context context-type="source">description</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l593j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4o483q43356f5o435q495l4o6n6r4p473r47586?t=334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="336" resname="locked">
+        <source>Locked</source>
+        <target state="translated">鎖定</target>
+        <context-group purpose="information">
+          <context context-type="source">locked</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l593j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4o483q43356f5o435q495l4o6n6r4p473r47586?t=336</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="220" resname="save">
+        <source>Save</source>
+        <target state="translated">儲存</target>
+        <context-group purpose="information">
+          <context context-type="source">save</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="222" resname="preferences_language">
+        <source>Language</source>
+        <target state="translated">語言</target>
+        <context-group purpose="information">
+          <context context-type="source">preferences_language</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="224" resname="preferences_system_default">
+        <source>System default</source>
+        <target state="translated">系統預設</target>
+        <context-group purpose="information">
+          <context context-type="source">preferences_system_default</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="226" resname="resend">
+        <source>Resend</source>
+        <target state="translated">重新傳送</target>
+        <context-group purpose="information">
+          <context context-type="source">resend</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="228" resname="shutdown">
+        <source>Shutdown</source>
+        <target state="translated">關機</target>
+        <context-group purpose="information">
+          <context context-type="source">shutdown</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="493" resname="cant_shutdown">
+        <source>Shutdown not supported on this device</source>
+        <target state="needs-translation">Shutdown not supported on this device</target>
+        <context-group purpose="information">
+          <context context-type="source">cant_shutdown</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="230" resname="reboot">
+        <source>Reboot</source>
+        <target state="translated">重新開機</target>
+        <context-group purpose="information">
+          <context context-type="source">reboot</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="345" resname="traceroute">
+        <source>Traceroute</source>
+        <target state="translated">路由追蹤</target>
+        <context-group purpose="information">
+          <context context-type="source">traceroute</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523d3t6a466b5t496v435t425a5m4331383l4639363e346k4j443p473u41604l455t48566m665v4s4v215h6u4?t=345</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="232" resname="intro_show">
+        <source>Show Introduction</source>
+        <target state="translated">顯示介紹指南</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_show</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="234" resname="intro_welcome">
+        <source>Welcome to Meshtastic</source>
+        <target state="translated">歡迎來到 Meshtastic</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_welcome</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="236" resname="intro_welcome_text">
+        <source>Meshtastic is an open-source, off-grid, encrypted communication platform. The Meshtastic radios form a mesh network and communicate using the LoRa protocol to send text messages.</source>
+        <target state="translated">Meshtastic 是一個開源、離網、加密的通訊平台。Meshtastic 無線電組成網狀網絡，使用 LoRa 協議傳送文字訊息進行通訊。</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_welcome_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="324" resname="intro_started">
+        <source>…Let's get started!</source>
+        <target state="translated">…讓我們開始吧！</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_started</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="240" resname="intro_started_text">
+        <source>Connect your Meshtastic device by using either Bluetooth, Serial or WiFi. \n\nYou can see which devices are compatible at www.meshtastic.org/docs/hardware</source>
+        <target state="translated">使用藍牙、序列埠或 WiFi 連接您的 Meshtastic 設備。 \n\n您可以在 www.meshtastic.org/docs/hardware 查看兼容的設備</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_started_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="242" resname="intro_encryption">
+        <source>Setting up encryption</source>
+        <target state="translated">設置加密</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_encryption</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244" resname="intro_encryption_text">
+        <source>As standard, a default encryption key is set. To enable your own channel and enhanced encryption, go to the channel tab and change the channel name, this will set a random key for AES256 encryption. \n\nTo communicate with other devices they will need to scan your QR code or follow the shared link to configure the channel settings.</source>
+        <target state="translated">作為標準，設置了默認加密密鑰。 要啟用您自己的頻道和增強加密，請轉到頻道選項卡並更改頻道名稱，這將為 AES256 加密設置一個隨機密鑰。 \n\n要與其他設備通信，他們需要掃描您的二維碼或點擊共享鏈接來配置頻道設置。</target>
+        <context-group purpose="information">
+          <context context-type="source">intro_encryption_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="246" resname="message">
+        <source>Message</source>
+        <target state="translated">訊息:</target>
+        <context-group purpose="information">
+          <context context-type="source">message</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="248" resname="quick_chat">
+        <source>Quick chat options</source>
+        <target state="translated">快速聊天選項</target>
+        <context-group purpose="information">
+          <context context-type="source">quick_chat</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="250" resname="quick_chat_new">
+        <source>New quick chat</source>
+        <target state="translated">新的快速聊天</target>
+        <context-group purpose="information">
+          <context context-type="source">quick_chat_new</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="252" resname="quick_chat_edit">
+        <source>Edit quick chat</source>
+        <target state="translated">編輯快速聊天</target>
+        <context-group purpose="information">
+          <context context-type="source">quick_chat_edit</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="254" resname="quick_chat_append">
+        <source>Append to message</source>
+        <target state="translated">附加到訊息</target>
+        <context-group purpose="information">
+          <context context-type="source">quick_chat_append</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="256" resname="quick_chat_instant">
+        <source>Instantly send</source>
+        <target state="translated">即時發送</target>
+        <context-group purpose="information">
+          <context context-type="source">quick_chat_instant</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="260" resname="factory_reset">
+        <source>Factory reset</source>
+        <target state="translated">恢復出廠設置</target>
+        <context-group purpose="information">
+          <context context-type="source">factory_reset</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="262" resname="factory_reset_description">
+        <source>This will clear all device configuration you have done.</source>
+        <target state="translated">這將清除您所做的所有設備配置。</target>
+        <context-group purpose="information">
+          <context context-type="source">factory_reset_description</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="264" resname="bluetooth_disabled">
+        <source>Bluetooth disabled</source>
+        <target state="translated">藍牙已禁用</target>
+        <context-group purpose="information">
+          <context context-type="source">bluetooth_disabled</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="322" resname="permission_missing_31">
+        <source>Meshtastic needs Nearby devices permission to find and connect to devices via Bluetooth. You can turn it off when not in use.</source>
+        <target state="translated">Meshtastic 需要附近設備許可才能通過藍牙查找和連接設備。 您可以在不使用時將其關閉。</target>
+        <context-group purpose="information">
+          <context context-type="source">permission_missing_31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="268" resname="direct_message">
+        <source>Direct Message</source>
+        <target state="translated">直接發訊息</target>
+        <context-group purpose="information">
+          <context context-type="source">direct_message</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523d3t6a466b5t496v435t425a5m4331383l4639363e346k4j443p473u41604l455t48566m665v4s4v215h6u4?t=268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="270" resname="nodedb_reset">
+        <source>NodeDB reset</source>
+        <target state="translated">重設節點資料庫</target>
+        <context-group purpose="information">
+          <context context-type="source">nodedb_reset</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="272" resname="nodedb_reset_description">
+        <source>This will clear all nodes from this list.</source>
+        <target state="translated">這將從該列表中清除所有節點。</target>
+        <context-group purpose="information">
+          <context context-type="source">nodedb_reset_description</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="396" resname="delivery_confirmed">
+        <source>Delivery confirmed</source>
+        <target state="translated">已確認送達</target>
+        <context-group purpose="information">
+          <context context-type="source">delivery_confirmed</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="398" resname="error">
+        <source>Error</source>
+        <target state="translated">錯誤</target>
+        <context-group purpose="information">
+          <context context-type="source">error</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="374" resname="ignore">
+        <source>Ignore</source>
+        <target state="translated">忽略</target>
+        <context-group purpose="information">
+          <context context-type="source">ignore</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523d3t6a466b5t496v435t425a5m4331383l4639363e346k4j443p473u41604l455t48566m665v4s4v215h6u4?t=374</context>
+        </context-group>
+        <note from="Naomi Gumpel" priority="4">Is this ignore as in &quot;add to block list&quot;?</note>
+        <note from="andrekir" priority="4">added screenshot where it is currently used but please keep the translation generic.</note>
+      </trans-unit>
+      <trans-unit id="376" resname="ignore_add">
+        <source>Add '%s' to ignore list?</source>
+        <target state="translated">將 '%s' 加入忽略清單嗎？</target>
+        <context-group purpose="information">
+          <context context-type="source">ignore_add</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="378" resname="ignore_remove">
+        <source>Remove '%s' from ignore list?</source>
+        <target state="translated">從忽略清單中移除 '%s' 嗎？</target>
+        <context-group purpose="information">
+          <context context-type="source">ignore_remove</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="274" resname="map_select_download_region">
+        <source>Select download region</source>
+        <target state="translated">選擇下載地區</target>
+        <context-group purpose="information">
+          <context context-type="source">map_select_download_region</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l573j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4m473p4c356f5o435q495l4o6n6r4p473r47586?t=274</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="282" resname="map_tile_download_estimate">
+        <source>Tile download estimate:</source>
+        <target state="translated">圖磚下載估計:</target>
+        <context-group purpose="information">
+          <context context-type="source">map_tile_download_estimate</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="284" resname="map_start_download">
+        <source>Start Download</source>
+        <target state="translated">開始下載</target>
+        <context-group purpose="information">
+          <context context-type="source">map_start_download</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l573j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4m473p4c356f5o435q495l4o6n6r4p473r47586?t=284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="286" resname="request_position">
+        <source>Request position</source>
+        <target state="translated">要求位置</target>
+        <context-group purpose="information">
+          <context context-type="source">request_position</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523d3t6a466b5t496v435t425a5m4331383l4639363e346k4j443p473u41604l455t48566m665v4s4v215h6u4?t=286</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="288" resname="close">
+        <source>Close</source>
+        <target state="translated">關閉</target>
+        <context-group purpose="information">
+          <context context-type="source">close</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="290" resname="device_settings">
+        <source>Radio configuration</source>
+        <target state="translated">設備設定</target>
+        <context-group purpose="information">
+          <context context-type="source">device_settings</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523d3t6a466b5t496v435t425a5m4331383l4639363e346k4j443p473u41604l455t48566m665v4s4v215h6u4?t=290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="292" resname="module_settings">
+        <source>Module configuration</source>
+        <target state="translated">模組設定</target>
+        <context-group purpose="information">
+          <context context-type="source">module_settings</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="294" resname="add">
+        <source>Add</source>
+        <target state="translated">新增</target>
+        <context-group purpose="information">
+          <context context-type="source">add</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=294</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="427" resname="edit">
+        <source>Edit</source>
+        <target state="translated">編輯</target>
+        <context-group purpose="information">
+          <context context-type="source">edit</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="296" resname="calculating">
+        <source>Calculating…</source>
+        <target state="translated">正在計算……</target>
+        <context-group purpose="information">
+          <context context-type="source">calculating</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="298" resname="map_offline_manager">
+        <source>Offline Manager</source>
+        <target state="translated">離線管理</target>
+        <context-group purpose="information">
+          <context context-type="source">map_offline_manager</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l53373t6a466b5t496v435t425a5m4331383l4639363e346k4k403r483p41604l455t48566m665v4s4v215h6u4?t=298</context>
+        </context-group>
+        <note from="Naomi Gumpel" priority="4">Can I get context for this?</note>
+        <note from="andrekir" priority="4">added screenshot. this it the title of a menu used to manage offline map content.</note>
+      </trans-unit>
+      <trans-unit id="300" resname="map_cache_size">
+        <source>Current Cache size</source>
+        <target state="translated">目前快取大小</target>
+        <context-group purpose="information">
+          <context context-type="source">map_cache_size</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l53373t6a466b5t496v435t425a5m4331383l4639363e346k4k403r483p41604l455t48566m665v4s4v215h6u4?t=300</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="302" resname="map_cache_info">
+        <source>Cache Capacity: %1$.2f MB\nCache Usage: %2$.2f MB</source>
+        <target state="translated">快取容量: %1$.2f MB\n快取使用: %2$.2f MB</target>
+        <context-group purpose="information">
+          <context context-type="source">map_cache_info</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="304" resname="map_clear_tiles">
+        <source>Clear Downloaded Tiles</source>
+        <target state="translated">清除下載的圖磚</target>
+        <context-group purpose="information">
+          <context context-type="source">map_clear_tiles</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l53373t6a466b5t496v435t425a5m4331383l4639363e346k4k403r483p41604l455t48566m665v4s4v215h6u4?t=304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="306" resname="map_tile_source">
+        <source>Tile Source</source>
+        <target state="translated">圖磚來源</target>
+        <context-group purpose="information">
+          <context context-type="source">map_tile_source</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l52393t6a466b5t496v435t425a5m4331383k4639373c3i4k4j423u453r4g4t405p4?t=306</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="308" resname="map_purge_success">
+        <source>SQL Cache purged for %s</source>
+        <target state="translated">清除 %s 的 SQL 快取</target>
+        <context-group purpose="information">
+          <context context-type="source">map_purge_success</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l52393t6a466b5t496v435t425a5m4331383k4639373c3i4k4j423u453r4g4t405p4?t=308</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="310" resname="map_purge_fail">
+        <source>SQL Cache purge failed, see logcat for details</source>
+        <target state="translated">SQL快取清除失敗，請查看logcat以獲取詳細資訊。</target>
+        <context-group purpose="information">
+          <context context-type="source">map_purge_fail</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="312" resname="map_cache_manager">
+        <source>Cache Manager</source>
+        <target state="translated">快取管理</target>
+        <context-group purpose="information">
+          <context context-type="source">map_cache_manager</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="314" resname="map_download_complete">
+        <source>Download complete!</source>
+        <target state="translated">下載已完成！</target>
+        <context-group purpose="information">
+          <context context-type="source">map_download_complete</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="316" resname="map_download_errors">
+        <source>Download complete with %d errors</source>
+        <target state="translated">下載完成，但有 %d 個錯誤</target>
+        <context-group purpose="information">
+          <context context-type="source">map_download_errors</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="318" resname="map_cache_tiles">
+        <source>%d tiles</source>
+        <target state="translated">%d 圖磚</target>
+        <context-group purpose="information">
+          <context context-type="source">map_cache_tiles</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l573j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4m473p4c356f5o435q495l4o6n6r4p473r47586?t=318</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="320" resname="map_subDescription">
+        <source>bearing: %1$d° distance: %2$s</source>
+        <target state="translated">方位：%1$d° 距離：%2$s</target>
+        <context-group purpose="information">
+          <context context-type="source">map_subDescription</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="338" resname="waypoint_edit">
+        <source>Edit waypoint</source>
+        <target state="translated">編輯航點</target>
+        <context-group purpose="information">
+          <context context-type="source">waypoint_edit</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="340" resname="waypoint_delete">
+        <source>Delete waypoint?</source>
+        <target state="translated">刪除航點?</target>
+        <context-group purpose="information">
+          <context context-type="source">waypoint_delete</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="342" resname="waypoint_new">
+        <source>New waypoint</source>
+        <target state="translated">新建航點</target>
+        <context-group purpose="information">
+          <context context-type="source">waypoint_new</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l593j5k5q4l6u4t4i645o44575l493133393h48383b3l4m4p4o483q43356f5o435q495l4o6n6r4p473r47586?t=342</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="380" resname="waypoint_received">
+        <source>Received waypoint: %s</source>
+        <target state="translated">收到編輯航點：%s</target>
+        <context-group purpose="information">
+          <context context-type="source">waypoint_received</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="382" resname="error_duty_cycle">
+        <source>Duty Cycle limit reached. Cannot send messages right now, please try again later.</source>
+        <target state="translated">達到循環工作週期限制。目前無法發送訊息，請稍後再試。</target>
+        <context-group purpose="information">
+          <context context-type="source">error_duty_cycle</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="400" resname="remove">
+        <source>Remove</source>
+        <target state="translated">移除</target>
+        <context-group purpose="information">
+          <context context-type="source">remove</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l523d3t6a466b5t496v435t425a5m4331383l4639363e346k4j443p473u41604l455t48566m665v4s4v215h6u4?t=400</context>
+        </context-group>
+        <note from="andrekir" priority="4">previously &quot;Forget Node&quot;</note>
+      </trans-unit>
+      <trans-unit id="402" resname="remove_node_text">
+        <source>This node will be removed from your list until your node receives data from it again.</source>
+        <target state="translated">該節點將從您的列表中移除，直到您的節點再次收到來自該節點的數據。</target>
+        <context-group purpose="information">
+          <context context-type="source">remove_node_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="404" resname="mute">
+        <source>Mute</source>
+        <target state="translated">靜音</target>
+        <context-group purpose="information">
+          <context context-type="source">mute</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="406" resname="mute_notifications">
+        <source>Mute notifications</source>
+        <target state="translated">靜音通知</target>
+        <context-group purpose="information">
+          <context context-type="source">mute_notifications</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="408" resname="mute_8_hours">
+        <source>8 hours</source>
+        <target state="translated">8小時</target>
+        <context-group purpose="information">
+          <context context-type="source">mute_8_hours</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="410" resname="mute_1_week">
+        <source>1 week</source>
+        <target state="translated">1週</target>
+        <context-group purpose="information">
+          <context context-type="source">mute_1_week</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="412" resname="mute_always">
+        <source>Always</source>
+        <target state="translated">總是</target>
+        <context-group purpose="information">
+          <context context-type="source">mute_always</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="497" resname="replace">
+        <source>Replace</source>
+        <target state="translated">替換</target>
+        <context-group purpose="information">
+          <context context-type="source">replace</context>
+          <context context-type="x-crowdin-screenshot">https://meshtastic.crowdin.com/s/wrap/e3l533e3t6a466b5t496v435t425a5m4331383l4738363a346l4j413s443r41604l455t48566m665v4s4v215h6u4?t=497</context>
+        </context-group>
+        <note from="Kayra Gündoğar ÇETİN" priority="4">The word “replace” can also have many translations depending on where it is used. Context please. I didn't see it in the app.</note>
+        <note from="andrekir" priority="4">screenshot added for context</note>
+      </trans-unit>
+      <trans-unit id="499" resname="wifi_qr_code_scan">
+        <source>Scan WiFi QR code</source>
+        <target state="translated">掃描WiFi QR code</target>
+        <context-group purpose="information">
+          <context context-type="source">wifi_qr_code_scan</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="501" resname="wifi_qr_code_error">
+        <source>Invalid WiFi Credential QR code format</source>
+        <target state="translated">錯誤的 WiFi 驗證QR code格式</target>
+        <context-group purpose="information">
+          <context context-type="source">wifi_qr_code_error</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="503" resname="navigate_back">
+        <source>Navigate Back</source>
+        <target state="needs-translation">Navigate Back</target>
+        <context-group purpose="information">
+          <context context-type="source">navigate_back</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="505" resname="battery">
+        <source>Battery</source>
+        <target state="translated">電池</target>
+        <context-group purpose="information">
+          <context context-type="source">battery</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="507" resname="channel_utilization">
+        <source>Channel Utilization</source>
+        <target state="translated">頻道使用量</target>
+        <context-group purpose="information">
+          <context context-type="source">channel_utilization</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="509" resname="air_utilization">
+        <source>Air Utilization</source>
+        <target state="needs-translation">Air Utilization</target>
+        <context-group purpose="information">
+          <context context-type="source">air_utilization</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="517" resname="temperature">
+        <source>Temperature</source>
+        <target state="translated">溫度</target>
+        <context-group purpose="information">
+          <context context-type="source">temperature</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="519" resname="humidity">
+        <source>Humidity</source>
+        <target state="translated">濕度</target>
+        <context-group purpose="information">
+          <context context-type="source">humidity</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="521" resname="logs">
+        <source>Logs</source>
+        <target state="translated">系統記錄</target>
+        <context-group purpose="information">
+          <context context-type="source">logs</context>
+        </context-group>
+        <note from="micropicostack" priority="4">The term &quot;Logs&quot; is used in the &quot;Metric Logs&quot; fields and has a value in front e.g. &quot;10 Logs&quot;. But in Estonian it would be &quot;10 Logi kirjet&quot; and if there is only one then &quot;1 Logi kirje&quot;. So the source string ought to be &quot;%d Logs&quot; and for singluar and plural.</note>
+      </trans-unit>
+      <trans-unit id="523" resname="hops_away">
+        <source>Hops Away</source>
+        <target state="translated">節點距</target>
+        <context-group purpose="information">
+          <context context-type="source">hops_away</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="525" resname="info">
+        <source>Information</source>
+        <target state="translated">資訊</target>
+        <context-group purpose="information">
+          <context context-type="source">info</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="527" resname="ch_util_definition">
+        <source>Utilization for the current channel, including well formed TX, RX and malformed RX (aka noise).</source>
+        <target state="needs-translation">Utilization for the current channel, including well formed TX, RX and malformed RX (aka noise).</target>
+        <context-group purpose="information">
+          <context context-type="source">ch_util_definition</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="529" resname="air_util_definition">
+        <source>Percent of airtime for transmission used within the last hour.</source>
+        <target state="translated">Percent of airtime for transmission used within the last hour.</target>
+        <context-group purpose="information">
+          <context context-type="source">air_util_definition</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="531" resname="iaq">
+        <source>IAQ</source>
+        <target state="translated">室内空氣品質指標 (IAQ)</target>
+        <context-group purpose="information">
+          <context context-type="source">iaq</context>
+        </context-group>
+        <note from="Kayra Gündoğar ÇETİN" priority="4">IAQ, or &quot;Indoor Air Quality&quot;, can be translated into Turkish as &quot;İç Hava Kalitesi&quot; and &quot;Kapalı Hava Kalitesi&quot;. And if we translate them as &quot;IHK&quot; or &quot;KHK&quot;, they will have completely different connotations that the Turkish people are familiar with. However, if we keep it as IAQ, it will be more understandable and easier to find when researching.</note>
+      </trans-unit>
+      <trans-unit id="533" resname="encryption_psk">
+        <source>Shared Key</source>
+        <target state="translated">共用金鑰</target>
+        <context-group purpose="information">
+          <context context-type="source">encryption_psk</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="535" resname="encryption_psk_text">
+        <source>Direct messages are using the shared key for the channel.</source>
+        <target state="translated">私訊使用頻道的共用金鑰進行加密。</target>
+        <context-group purpose="information">
+          <context context-type="source">encryption_psk_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="537" resname="encryption_pkc">
+        <source>Public Key Encryption</source>
+        <target state="translated">加密公鑰</target>
+        <context-group purpose="information">
+          <context context-type="source">encryption_pkc</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="539" resname="encryption_pkc_text">
+        <source>Direct messages are using the new public key infrastructure for encryption. Requires firmware version 2.5 or greater.</source>
+        <target state="translated">私訊採用全新的公鑰加密技術進行加密。需要將韌體版本更新至 2.5 或以上。</target>
+        <context-group purpose="information">
+          <context context-type="source">encryption_pkc_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="541" resname="encryption_error">
+        <source>Public key mismatch</source>
+        <target state="translated">公鑰不相符</target>
+        <context-group purpose="information">
+          <context context-type="source">encryption_error</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="543" resname="encryption_error_text">
+        <source>The public key does not match the recorded key. You may remove the node and let it exchange keys again, but this may indicate a more serious security problem. Contact the user through another trusted channel, to determine if the key change was due to a factory reset or other intentional action.</source>
+        <target state="needs-translation">The public key does not match the recorded key. You may remove the node and let it exchange keys again, but this may indicate a more serious security problem. Contact the user through another trusted channel, to determine if the key change was due to a factory reset or other intentional action.</target>
+        <context-group purpose="information">
+          <context context-type="source">encryption_error_text</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1131" resname="request_userinfo">
+        <source>Request user info</source>
+        <target state="needs-translation">Request user info</target>
+        <context-group purpose="information">
+          <context context-type="source">request_userinfo</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1793" resname="meshtastic_new_nodes_notifications">
+        <source>New node notifications</source>
+        <target state="needs-translation">New node notifications</target>
+        <context-group purpose="information">
+          <context context-type="source">meshtastic_new_nodes_notifications</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1135" resname="more_details">
+        <source>More details</source>
+        <target state="translated">詳細資訊</target>
+        <context-group purpose="information">
+          <context context-type="source">more_details</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1137" resname="snr">
+        <source>SNR</source>
+        <target state="translated">SNR</target>
+        <context-group purpose="information">
+          <context context-type="source">snr</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1139" resname="snr_definition">
+        <source>Signal-to-Noise Ratio, a measure used in communications to quantify the level of a desired signal to the level of background noise. In Meshtastic and other wireless systems, a higher SNR indicates a clearer signal that can enhance the reliability and quality of data transmission.</source>
+        <target state="needs-translation">Signal-to-Noise Ratio, a measure used in communications to quantify the level of a desired signal to the level of background noise. In Meshtastic and other wireless systems, a higher SNR indicates a clearer signal that can enhance the reliability and quality of data transmission.</target>
+        <context-group purpose="information">
+          <context context-type="source">snr_definition</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1141" resname="rssi">
+        <source>RSSI</source>
+        <target state="translated">RSSI</target>
+        <context-group purpose="information">
+          <context context-type="source">rssi</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1143" resname="rssi_definition">
+        <source>Received Signal Strength Indicator, a measurement used to determine the power level being received by the antenna. A higher RSSI value generally indicates a stronger and more stable connection.</source>
+        <target state="needs-translation">Received Signal Strength Indicator, a measurement used to determine the power level being received by the antenna. A higher RSSI value generally indicates a stronger and more stable connection.</target>
+        <context-group purpose="information">
+          <context context-type="source">rssi_definition</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1145" resname="iaq_definition">
+        <source>(Indoor Air Quality) relative scale IAQ value as measured by Bosch BME680. Value Range 0–500.</source>
+        <target state="translated">(室内空氣品質) 博世 BME680 測定之比例指標 IAQ 值。 區間為 0–500。</target>
+        <context-group purpose="information">
+          <context context-type="source">iaq_definition</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1147" resname="device_metrics_log">
+        <source>Device Metrics Log</source>
+        <target state="needs-translation">Device Metrics Log</target>
+        <context-group purpose="information">
+          <context context-type="source">device_metrics_log</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1149" resname="node_map">
+        <source>Node Map</source>
+        <target state="translated">節點地圖</target>
+        <context-group purpose="information">
+          <context context-type="source">node_map</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1151" resname="position_log">
+        <source>Position Log</source>
+        <target state="translated">定位日誌</target>
+        <context-group purpose="information">
+          <context context-type="source">position_log</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1153" resname="env_metrics_log">
+        <source>Environment Metrics Log</source>
+        <target state="translated">環境監測讀數日誌</target>
+        <context-group purpose="information">
+          <context context-type="source">env_metrics_log</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1155" resname="sig_metrics_log">
+        <source>Signal Metrics Log</source>
+        <target state="needs-translation">Signal Metrics Log</target>
+        <context-group purpose="information">
+          <context context-type="source">sig_metrics_log</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1157" resname="administration">
+        <source>Administration</source>
+        <target state="translated">管理</target>
+        <context-group purpose="information">
+          <context context-type="source">administration</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1159" resname="remote_admin">
+        <source>Remote Administration</source>
+        <target state="translated">遠端管理</target>
+        <context-group purpose="information">
+          <context context-type="source">remote_admin</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1161" resname="bad">
+        <source>Bad</source>
+        <target state="translated">不良</target>
+        <context-group purpose="information">
+          <context context-type="source">bad</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1163" resname="fair">
+        <source>Fair</source>
+        <target state="translated">普通</target>
+        <context-group purpose="information">
+          <context context-type="source">fair</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1165" resname="good">
+        <source>Good</source>
+        <target state="translated">良好</target>
+        <context-group purpose="information">
+          <context context-type="source">good</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1167" resname="none_quality">
+        <source>None</source>
+        <target state="translated">無</target>
+        <context-group purpose="information">
+          <context context-type="source">none_quality</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1795" resname="share_to">
+        <source>Share to…</source>
+        <target state="translated">分享至…</target>
+        <context-group purpose="information">
+          <context context-type="source">share_to</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1797" resname="share_message">
+        <source>Share message</source>
+        <target state="translated">分享訊息</target>
+        <context-group purpose="information">
+          <context context-type="source">share_message</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1169" resname="signal">
+        <source>Signal</source>
+        <target state="translated">信號</target>
+        <context-group purpose="information">
+          <context context-type="source">signal</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1171" resname="signal_quality">
+        <source>Signal Quality</source>
+        <target state="translated">信號品質</target>
+        <context-group purpose="information">
+          <context context-type="source">signal_quality</context>
+        </context-group>
+        <note from="mrmelk" priority="4">Blir dette rett?</note>
+      </trans-unit>
+      <trans-unit id="1173" resname="traceroute_log">
+        <source>Traceroute Log</source>
+        <target state="translated">路由追蹤 (Traceroute) 日誌</target>
+        <context-group purpose="information">
+          <context context-type="source">traceroute_log</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1175" resname="traceroute_direct">
+        <source>Direct</source>
+        <target state="translated">直線</target>
+        <context-group purpose="information">
+          <context context-type="source">traceroute_direct</context>
+        </context-group>
+      </trans-unit>
+      <group restype="x-gettext-plurals">
+        <trans-unit id="1177[0]" resname="traceroute_hops">
+          <source>%d hops</source>
+          <target state="translated">%d 跳數</target>
+          <context-group purpose="information">
+            <context context-type="source">traceroute_hops [one] [other]</context>
+            <context context-type="x-plural-form">Form: Other</context>
+            <context context-type="x-plural-example">Translation will be used with numbers: 0-999; 1.2...</context>
+          </context-group>
+        </trans-unit>
+      </group>
+      <trans-unit id="1179" resname="traceroute_diff">
+        <source>Hops towards %1$d Hops back %2$d</source>
+        <target state="needs-translation">Hops towards %1$d Hops back %2$d</target>
+        <context-group purpose="information">
+          <context context-type="source">traceroute_diff</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1799" resname="twenty_four_hours">
+        <source>24H</source>
+        <target state="translated">24小時</target>
+        <context-group purpose="information">
+          <context context-type="source">twenty_four_hours</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1801" resname="forty_eight_hours">
+        <source>48H</source>
+        <target state="translated">48小時</target>
+        <context-group purpose="information">
+          <context context-type="source">forty_eight_hours</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1803" resname="one_week">
+        <source>1W</source>
+        <target state="translated">1週</target>
+        <context-group purpose="information">
+          <context context-type="source">one_week</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1805" resname="two_weeks">
+        <source>2W</source>
+        <target state="translated">2週</target>
+        <context-group purpose="information">
+          <context context-type="source">two_weeks</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1807" resname="four_weeks">
+        <source>4W</source>
+        <target state="translated">4週</target>
+        <context-group purpose="information">
+          <context context-type="source">four_weeks</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1809" resname="max">
+        <source>Max</source>
+        <target state="translated">最大值</target>
+        <context-group purpose="information">
+          <context context-type="source">max</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1813" resname="copy">
+        <source>Copy</source>
+        <target state="translated">複製</target>
+        <context-group purpose="information">
+          <context context-type="source">copy</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1815" resname="alert_bell_text">
+        <source>Alert Bell Character!</source>
+        <target state="translated">警鈴字符！</target>
+        <context-group purpose="information">
+          <context context-type="source">alert_bell_text</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
