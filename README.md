@@ -3,7 +3,7 @@
 這是一個支援 XLIFF 和 XCSTRINGS 格式的翻譯工具，使用 LLM (Large Language Model) 和 DeepL API 進行高品質翻譯。
 
 ## 功能特色
-
+![./demo.png](./demo.png)
 - 支援 XLIFF 和 XCSTRINGS 格式檔案
 - 使用 LLM (Ollama Gemma) 進行初步翻譯
 - 支援 DeepL API 作為備選翻譯服務
@@ -72,10 +72,10 @@ Localizable_ZH-HANT_202403151430.xcstrings
 
 ### 參數說明
 
--t, --target-lang: 目標語言（例如：ZH-HANT）
--i, --input: 輸入檔案路徑
--d, --domain: 翻譯領域，有助於提高專業術語翻譯準確度
--all: 重新翻譯所有內容，包括已翻譯項目
--supervised: 開啟監督模式，每次翻譯需人工確認
--deepl: 啟用 DeepL API 作為備選翻譯
---deepl-key: DeepL API 金鑰
+- -t, --target-lang: 目標語言（例如：ZH-HANT）
+- -i, --input: 輸入檔案路徑
+- -d, --domain: 翻譯領域，有助於提高專業術語翻譯準確度
+- -all: 重新翻譯所有內容，包括已翻譯項目
+- -supervised: 開啟監督模式，每次翻譯需人工確認
+- -deepl: 啟用 DeepL API 作為備選翻譯
+- --deepl-key: DeepL API 金鑰
