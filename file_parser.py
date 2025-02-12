@@ -249,18 +249,27 @@ class FileParser:
                     translate_all, supervised, translator, test_mode=False):
         """處理 .po 檔案的翻譯"""
         import polib
+        import shutil
         
-        # 使用 utf-8 編碼讀取 PO 檔案
-        po = polib.pofile(file_path, encoding='utf-8')
+        # 先複製原始檔案到輸出路徑
+        shutil.copy2(file_path, output_path)
+        
+        # 使用輸出檔案進行後續操作
+        po = polib.pofile(output_path)  # 移除 encoding 參數
         total_entries = len(po)
+        processed_count = 0  # 追蹤實際處理的條目數
+        
+        # 設定最大處理條目數
+        max_entries = 20 if test_mode else total_entries
         if test_mode:
-            print(f"{Fore.YELLOW}測試模式：只翻譯前20個條目{Style.RESET_ALL}")
-            total_entries = min(20, total_entries)
+            print(f"{Fore.YELLOW}測試模式：只翻譯前{max_entries}個條目{Style.RESET_ALL}")
+            total_entries = max_entries
+        
         translator.stats.set_total_entries(total_entries)
         
         # 載入進度
         progress = self.progress_tracker.load_progress(file_path, target_lang)
-        processed_items = set(progress['processed_items']) if progress else set()
+        processed_items = progress['processed_items'] if progress else {}  # 改為字典
         start_index = progress['last_index'] + 1 if progress else 0
         
         print(f"\n{Fore.CYAN}找到 {total_entries} 個翻譯單元{Style.RESET_ALL}")
@@ -269,10 +278,18 @@ class FileParser:
         
         try:
             for i, entry in enumerate(po[start_index:], start=start_index):
+                # 檢查是否達到處理上限
+                if processed_count >= max_entries:
+                    print(f"\n{Fore.YELLOW}已達到處理上限 ({max_entries} 個條目)，儲存並結束翻譯{Style.RESET_ALL}")
+                    break
+                
                 if entry.obsolete or entry.msgid in processed_items:
+                    # 顯示已有的翻譯記錄
+                    if entry.msgid in processed_items:
+                        print(f"{Fore.CYAN}使用已有翻譯記錄：{processed_items[entry.msgid]}{Style.RESET_ALL}")
                     continue
-                    
-                print(f"\n{Fore.YELLOW}處理第 {i+1}/{total_entries} 個單元{Style.RESET_ALL}")
+                
+                print(f"\n{Fore.YELLOW}處理第 {processed_count+1}/{max_entries} 個單元{Style.RESET_ALL}")
                 print(f"原文: {entry.msgid}")
                 
                 # 評估現有翻譯
@@ -330,30 +347,33 @@ class FileParser:
                 else:
                     translator.stats.increment_new()
                 
-                # 記錄處理過的項目
-                processed_items.add(entry.msgid)
+                # 記錄處理過的項目，使用字典格式
+                processed_items[entry.msgid] = translated
                 
-                # 每處理10個項目保存一次進度
-                if len(processed_items) % 10 == 0:
+                # 每10個條目或達到上限時儲存進度和檔案
+                if processed_count % 10 == 0 or processed_count >= max_entries:
                     self.progress_tracker.save_progress(
-                        file_path, target_lang, i, total_entries, list(processed_items)
+                        file_path, target_lang, i, total_entries, processed_items
                     )
+                    po.save(output_path)  # 移除 encoding 參數
+                
+                processed_count += 1  # 增加已處理計數
                     
         except KeyboardInterrupt:
             print(f"\n{Fore.YELLOW}檢測到中斷，保存進度...{Style.RESET_ALL}")
             self.progress_tracker.save_progress(
-                file_path, target_lang, i, total_entries, list(processed_items)
+                file_path, target_lang, i, total_entries, processed_items
             )
+            po.save(output_path)  # 移除 encoding 參數
             raise
         
         # 完成後保存最終進度
         self.progress_tracker.save_progress(
-            file_path, target_lang, total_entries-1, total_entries, list(processed_items)
+            file_path, target_lang, total_entries-1, total_entries, processed_items
         )
         
-        # 修改儲存方法，確保使用 UTF-8 編碼
         translator.stats.set_output_file(output_path)
-        po.save(output_path, encoding='utf-8')
+        po.save(output_path)  # 移除 encoding 參數
         translator.stats.print_stats()
         print(f"翻譯完成，已儲存到 {output_path}")
     

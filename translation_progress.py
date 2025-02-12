@@ -31,17 +31,41 @@ class TranslationProgress:
         return None
     
     def save_progress(self, file_path, target_lang, current_index, total_count, processed_items):
-        """保存翻譯進度"""
+        """保存翻譯進度
+        processed_items: dict, key為原文，value為翻譯文"""
         progress_data = {
             'file_path': file_path,
             'target_lang': target_lang,
             'last_index': current_index,
             'processed_count': len(processed_items),
             'total_count': total_count,
-            'processed_items': processed_items,
+            'processed_items': processed_items,  # 現在是字典格式
+            'output_file': self.get_last_output_path(file_path),
             'last_update': datetime.now().isoformat()
         }
         
         progress_file = self.get_progress_file(file_path, target_lang)
         with open(progress_file, 'w', encoding='utf-8') as f:
             json.dump(progress_data, f, ensure_ascii=False, indent=2)
+            
+    def get_last_output_path(self, input_path):
+        """從輸入檔案路徑獲取對應的最後輸出檔案路徑"""
+        base_dir = os.path.dirname(input_path)
+        files = [f for f in os.listdir(base_dir) if f.startswith(os.path.basename(input_path).split('.')[0])]
+        if not files:
+            return None
+        # 按修改時間排序，取最新的
+        files.sort(key=lambda x: os.path.getmtime(os.path.join(base_dir, x)), reverse=True)
+        return os.path.join(base_dir, files[0])
+
+    def print_last_progress(self, file_path, target_lang):
+        """顯示上次翻譯的進度信息"""
+        progress = self.load_progress(file_path, target_lang)
+        if progress:
+            print(f"\n=== 上次翻譯進度 ===")
+            print(f"檔案: {progress['file_path']}")
+            print(f"輸出: {progress.get('output_file', '未知')}")
+            print(f"進度: {progress['processed_count']}/{progress['total_count']}")
+            print(f"最後更新: {progress['last_update']}")
+            print("==================")
+        return progress

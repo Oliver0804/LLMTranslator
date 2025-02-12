@@ -77,10 +77,7 @@ def show_settings_confirmation(args, output_path):
     return confirm == 'y'
 
 def main():
-    # 載入設定和參數
     args = parse_arguments()
-    TRANSLATION_SETTINGS["prompt_version"] = args.prompt_version
-    TRANSLATION_SETTINGS["domain"] = args.domain
     
     # 初始化檔案解析器
     file_parser = FileParser()
@@ -89,6 +86,12 @@ def main():
     except ValueError as e:
         print(f"{Fore.RED}錯誤：{str(e)}{Style.RESET_ALL}")
         sys.exit(1)
+    
+    # 如果指定要繼續翻譯，顯示上次進度
+    if args.continue_translation:
+        progress = file_parser.progress_tracker.print_last_progress(args.input, args.target_lang)
+        if not progress:
+            print(f"{Fore.YELLOW}找不到先前的進度記錄，將從頭開始翻譯{Style.RESET_ALL}")
     
     # 生成輸出路徑
     output_path = args.output or generate_output_path(args.input, file_type)

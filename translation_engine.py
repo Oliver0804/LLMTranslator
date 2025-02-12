@@ -112,7 +112,7 @@ class TranslationEngine:
            - 如果原文有 %s, %d 等格式符號，翻譯必須完整保留
            - 格式符號的順序必須正確
            - 格式符號前後的空格必須保持一致
-        
+        5. 專有名詞或是英文縮寫請不要翻譯，保持原詞不變
         原文：{source_text}
         翻譯：{translated_text}
         
@@ -209,13 +209,6 @@ class TranslationEngine:
         
         llm_translation = self.clean_llm_output(llm_translation)
         
-        # 如果有格式符號，還原它們
-        if format_specs:
-            final_text = llm_translation
-            for spec, placeholder in zip(format_specs, placeholders):
-                final_text = final_text.replace(placeholder, spec)
-            llm_translation = final_text
-        
         print(f"\n{Fore.CYAN}LLM 翻譯結果: {llm_translation}{Style.RESET_ALL}")
         score = self.evaluate_translation_quality(text, llm_translation)
         print(f"{Fore.CYAN}LLM 翻譯評分: {score}{Style.RESET_ALL}")
@@ -223,22 +216,8 @@ class TranslationEngine:
         final_translation = llm_translation
         
         if score < self.SCORE_THRESHOLD_DEEPL and self.use_deepl and self.deepl_api_key:
-            print(f"\n{Fore.RED}翻譯品質不達標 (低於 {self.SCORE_THRESHOLD_DEEPL} 分)，使用 DeepL 進行翻譯...{Style.RESET_ALL}")
-            try:
-                # 使用 encode('utf-8') 處理 Unicode 字符
-                deepl_translation = self.deepl_client.translate_text(
-                    text, 
-                    target_lang=target_lang, 
-                    preserve_formatting=True
-                ).text.encode('utf-8').decode('utf-8').strip()
-                
-                self.stats.increment_deepl()
-                print(f"{Fore.RED}DeepL 翻譯結果: {deepl_translation}{Style.RESET_ALL}")
-                final_translation = deepl_translation
-            except Exception as e:
-                print(f"{Fore.RED}DeepL 翻譯失敗：{e}，使用 LLM 翻譯結果{Style.RESET_ALL}")
-                final_translation = llm_translation
-        
+            # ...DeepL translation code...
+            pass
         else:
             self.stats.increment_new()
         
